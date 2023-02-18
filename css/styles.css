@@ -120,7 +120,9 @@ color:var(--bg-color);
    url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center; 
-  background-size: cover;
+  background-size:1440px,auto;
+  
+  height: 600px;
   /*@ фон задний светлее@*/
 } 
  
@@ -408,8 +410,7 @@ padding-bottom: 32px;
 .customers-itam{
  width: 168px; ;
  height: 88px; 
- border: 1px solid var(--color-grau);
- border-radius: 4px;
+ 
 }
 .customers-link{
   display: flex;
@@ -417,21 +418,25 @@ padding-bottom: 32px;
   height: 100%;
  justify-content: center;
  align-items: center;
+ color: var(--color-grau);
+ border: 1px solid var(--color-grau);
+ border-radius: 4px;
 }
 .customers-cli{
-flex-grow: 0;
-padding: 0;
-fill:var(--color-grau);
+width:104px ;
+height:56px ;
+fill: currentColor;
+/*fill:var(--color-grau);*/
 }
 .section-customers{
   padding-top: 120px;
   padding-bottom: 130px;
 }
 
-.customers-link :focus,
-.customers-link :hover{
-  background-color:var(--color-background-primary);
-  fill:var(--first-bg-color) ;
+.customers-link:focus,
+.customers-link:hover{
+  color:var(--first-bg-color) ;
+  border-color: var(--first-bg-color);
 }
 .icon-our{
   display: flex;
@@ -486,6 +491,5 @@ fill: var(--second-bg-color);
  .social-link-footer:hover,
  .social-link-footer:focus{
   background-color: var(--color-social);
-  
 }
 
